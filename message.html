@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>问题征集</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<style>
+  *{
+     margin: 0;
+     padding: 0;
+  } 
+  menu{
+      width: 100%;
+      height: 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.3);
+    }
+  .first{
+      position:fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        min-width: 1000px;
+        z-index:-10;
+        zoom: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center 0;
+        background-image: url(images/1.jpg);
+    }
+    menu .second{
+      width: 200px;
+      float: left;
+      margin-left: 0%;
+    }
+    menu span{
+      font: 20px/1.5 "FZJianZhi-M23T";
+      color: black;
+    }
+    .text{
+      float: left;
+      position: relative;
+      left: 150px;
+      top: 8px;
+    }
+    menu .second img{
+      height: 45px;
+    }
+    menu ul{      
+      float: right;
+      color: white;
+      text-align: center;
+      position: relative;
+      right: 100px;
+    }
+    menu ul li{
+      display: inline-block;
+      width: 170px;
+      height: 50px;
+      line-height: 50px;
+    }
+    menu ul li a{
+      font:17px/1.5 "Microsoft YaHei";
+      color: white;
+      text-decoration: none;      
+    }
+     menu ul li a:hover {
+      color: red;
+    }
+		header{
+			height: 66px;
+			width: 100%;
+			background-color: #eee;
+			padding:5px 0 0 50px;
+		}
+		table tr td{
+			height: 60px;
+		}
+		input[type='text'],input[type='number'],input[type='date']{
+			border:none;
+			border-bottom:2px solid #ddd;
+			height: 30px;
+		}
+		button[type="submit"]{
+			background-color: #ff4400;
+			height: 25px;
+			width: 50px;
+		}
+/*		td p{
+		  width:622px;
+		  height: 96px;
+		  background-color: #eeeeee;
+		}*/
+    .name{
+          position: absolute;
+          left:27%;
+          bottom: 10%;
+    }
+    .submit{
+          position: absolute;
+          left:90%;
+          bottom: 5%;
+    }
+    .loop{
+      font: 35px/1.5 "Lisu";
+      color:#454545;
+      position: absolute;
+      left:45%;
+      bottom: 80%;
+    }
+    .cqt{
+      font: 18px/1.5 "KaiTi";
+      color:black;
+      position: absolute;
+      left:35%;
+      bottom:3%;
+    }
+    		.person{
+         	display: block;
+         	width: 30px;
+         	height: 30px;
+         	position: absolute;
+         	left: 83%;
+         	bottom: 40px;
+         	margin: -15px -15px;
+         	color: #191970;
+         	text-decoration: none;
+         }
+         .back{
+         	display: block;
+         	width: 30px;
+         	height: 30px;
+         	position: absolute;
+         	left: 93%;
+         	bottom: 40px;
+         	margin: -15px -15px;
+         	color: #191970;
+         	text-decoration: none;
+         }
+         
+        a span.iconfont{
+        	font: 25px/1.5 "Courier New";
+         }
+         a span:hover {
+			color: #ae9276;
+		}
+	</style>
+</head>
+<body>
+<div class="first"></div>
+<menu>
+    <span class="text">建党九十九周年</span>
+    </div>
+      <ul>
+      <li class="">
+          <a href="index.html">首页</a>
+      </li>
+       <li class="">
+          <a href="index.html">我们的党</a>
+      </li>
+      <li class="">
+         <a href="index.html">党的作品</a>
+      </li>
+      <li class="">
+          <a href="about.html">关于作品</a>
+      </li>
+      <li class="">
+          <a href="messages.html">问题征集</a>
+      </li>
+     </ul>
+</menu>
+<div class="name">
+<form action="#" method="post">
+<table>
+     <tr>
+     <td>导航栏：</td>
+    <td><input type="text" name="title" list="title"  required="required" id="text">
+     主题：<select>
+     <option>首页</option>
+     <option>我们的党</option>
+     <option>党的作品</option>
+     <option>关于作品</option>
+     <option>问题征集</option>
+     </select>
+     </td>
+     </tr>
+     <tr>
+     <td>喜欢页面：</td>
+    <td><p>1.选项：<textarea name="optFirst" required="required" id="optFirst" style="resize: none"></textarea> 
+    链接：<textarea name="urlFirst" style="resize: none"></textarea><!-- <input type="image" src="images/35.png"><input type="image" src="images/36.png"> --><br>
+     2.选项：<textarea name="optSecond" required="required" id="optSecond" style="resize: none"></textarea> 
+     链接：<textarea name="urlSecond" style="resize: none"></textarea><!-- <input type="image" src="images/35.png"><input type="image" src="images/36.png"> --></td>
+     </p></tr>
+     <tr>
+     <td>最多可选：</td>
+     <td><input type="number" min="0" name="mumber" required="required" id="number">项
+     填写日期：<input type="date" name="date"></td>
+     </tr>
+     <tr>
+     <td>改进建议：</td>
+     <td><textarea cols="30" rows="10"></textarea></td>
+     </tr>
+     <tr>
+     <td colspan="2">上传附件<input type="file" name="file"></td>
+     </tr>
+     <div class="submit">
+     <input type="submit" value="提交">
+     </div>
+</table>
+</form></div>
+<script type="text/javascript">
+  var text =document.getElementById('text');
+  var optFirst =document.getElementById('optFirst');
+  var optSecond =document.getElementById('optSecond');
+  var number =document.getElementById('number');
+
+  text.oninvalid=function(){
+  var v =text.validity;
+   if (true === v.valueMissing) {
+    this.setCustomValidity("投票标题不能为空");
+   }
+   else{
+    this.setCustomValidity("");
+   }
+ } 
+ optFirst.oninvalid=function(){
+  var v =optFirst.validity;
+   if (true === v.valueMissing) {
+    this.setCustomValidity("选项1不能为空");
+   }
+   else{
+    this.setCustomValidity("");
+   }
+ } 
+  optSecond.oninvalid=function(){
+  var v =optSecond.validity;
+   if (true === v.valueMissing) {
+    this.setCustomValidity("选项2不能为空");
+   }
+   else{
+    this.setCustomValidity("");
+   }
+ } 
+  number.oninvalid=function(){
+  var v =number.validity;
+   if (true === v.valueMissing) {
+    this.setCustomValidity("最多可选不能为空");
+   }
+   else{
+    this.setCustomValidity("");
+   }
+ } 
+</script>
+<span class="loop">问题征集</span>
+<span class="cqt">制作人：电商一班 201905730108 蔡沁桐<br>如果有问题请联系我邮箱1146593657@qq.com</span>
+ <a href="about.html" class="person">
+	 <span class="iconfont"><img src="images/logo1.png" width="50px" height="50px"></span>
+</a>
+<a href="message.html" class="back">
+	 <span class="iconfont"><img src="images/logo2.png" width="50px" height="50px"></span>
+</a>
+</body>
+</html>
